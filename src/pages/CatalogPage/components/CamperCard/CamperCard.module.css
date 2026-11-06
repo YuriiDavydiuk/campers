@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+
+  width: 88.8rem;
+  min-height: 31.2rem;
+  padding: 2.4rem;
+  border-radius: 1.6rem;
+
+  background-color: var(--color-bg-secondary);
+}
+
+.image {
+  flex-shrink: 0;
+  width: 21.9rem;
+  height: 24rem;
+  border-radius: 1.6rem;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+
+  width: 52.4rem;
+  min-width: 0;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.title,
+.price {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  white-space: nowrap;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  flex-shrink: 0;
+}
+
+.details {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  line-height: 2.4rem;
+  white-space: nowrap;
+}
+
+.features {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.showMore {
+  width: 17.3rem;
+}
