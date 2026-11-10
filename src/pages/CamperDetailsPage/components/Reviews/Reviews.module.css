@@ -1,0 +1,77 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  width: 62.3rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+
+  width: 100%;
+  min-height: 18rem;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+
+  background-color: var(--color-bg-secondary);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: var(--color-primary);
+  background-color: var(--color-bg-primary);
+}
+
+.reviewer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.name {
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.rating {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.star {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  background-color: var(--color-border);
+  mask: url('../../../../assets/star.svg') center / contain no-repeat;
+}
+
+.starFilled {
+  background-color: var(--color-rating);
+}
+
+.comment {
+  line-height: 2.4rem;
+  color: var(--color-text-secondary);
+}

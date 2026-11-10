@@ -4,6 +4,7 @@ import AppLayout from './components/AppLayout/AppLayout';
 import HomePage from './pages/HomePage/HomePage';
 import CatalogPage from './pages/CatalogPage/CatalogPage';
 import CamperDetailsPage from './pages/CamperDetailsPage/CamperDetailsPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/catalog/:id" element={<CamperDetailsPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   );
