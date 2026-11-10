@@ -1,0 +1,49 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+
+  width: 63.8rem;
+  height: 67.66rem;
+}
+
+.mainGallery {
+  width: 100%;
+  height: 50.5rem;
+  border-radius: 1.661rem;
+  overflow: hidden;
+}
+
+.mainSlide,
+.mainImage {
+  width: 100%;
+  height: 100%;
+}
+
+.mainImage,
+.thumbnailImage {
+  object-fit: cover;
+}
+
+.thumbnails {
+  width: 100%;
+  height: 14.46rem;
+}
+
+.thumbnailSlide {
+  height: 14.46rem;
+  border: 3px solid transparent;
+  border-radius: 1.6rem;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.thumbnailSlide:global(.swiper-slide-thumb-active) {
+  border-color: var(--color-primary);
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+}

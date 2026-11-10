@@ -1,0 +1,133 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+
+  width: 64.1rem;
+  min-height: 38.2rem;
+  padding: 4.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: 1.6rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+
+  width: 52.7rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+
+.description {
+  line-height: 2.4rem;
+  color: var(--color-text-muted);
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  width: 52.7rem;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.input {
+  width: 100%;
+  height: 6rem;
+  padding: 1.8rem;
+  border: 1px solid transparent;
+  border-radius: 1.2rem;
+  outline: none;
+
+  line-height: 2.4rem;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+}
+
+.input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+}
+
+.field,
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  top: -0.7rem;
+  left: 1.2rem;
+  z-index: 1;
+
+  padding: 0 0.4rem;
+
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #ff6060;
+  background-color: var(--color-bg-primary);
+}
+
+.inputError,
+.inputError:focus {
+  border-color: #ff6060;
+  background-color: #fff0f0;
+}
+
+.errorIcon {
+  position: absolute;
+  top: 50%;
+  right: 1.6rem;
+  transform: translateY(-50%);
+
+  display: grid;
+  place-items: center;
+
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid #ff6060;
+  border-radius: 50%;
+
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #ff6060;
+}
+
+.errorMessage {
+  line-height: 2.4rem;
+  color: #ff6060;
+}
+
+.successMessage,
+.requestError {
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.successMessage {
+  color: var(--color-primary);
+}
+
+.requestError {
+  color: #ff6060;
+}

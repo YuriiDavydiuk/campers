@@ -25,5 +25,38 @@ export interface Camper {
   totalReviews: number;
 }
 
+export interface CamperImage {
+  id: string;
+  camperId: string;
+  thumb: string;
+  original: string;
+  order: number;
+}
+
+export interface CamperReview {
+  id: string;
+  camperId: string;
+  reviewer_name: string;
+  reviewer_rating: number;
+  comment: string;
+  createdAt: string;
+}
+
+export interface CamperDetails extends Omit<Camper, 'coverImage'> {
+  description: string;
+  gallery: CamperImage[];
+  createdAt: string;
+  updatedAt: string;
+}
+
 export type AmenityKey =
   'ac' | 'bathroom' | 'kitchen' | 'tv' | 'radio' | 'refrigerator' | 'microwave' | 'gas' | 'water';
+
+export interface BookingRequest {
+  name: string;
+  email: string;
+}
+
+export interface BookingResponse {
+  message: string;
+}
