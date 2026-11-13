@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import type { CamperImage } from '../../../../types/camper';
-import type { Swiper as SwiperType } from 'swiper/types';
-import { FreeMode, Thumbs } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/thumbs';
 
+import { useState } from 'react';
+import { FreeMode, Thumbs } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper/types';
+
+import type { CamperImage } from '../../../../types/camper';
 import css from './CamperGallery.module.css';
 
 interface CamperGalleryProps {
@@ -42,8 +42,12 @@ export default function CamperGallery({ images, camperName }: CamperGalleryProps
         className={css.thumbnails}
         modules={[FreeMode, Thumbs]}
         onSwiper={setThumbsSwiper}
-        spaceBetween={32}
+        spaceBetween={12}
         slidesPerView={4}
+        breakpoints={{
+          768: { spaceBetween: 24 },
+          1158: { spaceBetween: 32 },
+        }}
         freeMode
         watchSlidesProgress
       >

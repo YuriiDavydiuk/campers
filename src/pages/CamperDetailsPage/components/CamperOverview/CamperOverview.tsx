@@ -1,5 +1,5 @@
-import starIcon from '../../../../assets/star.svg';
 import mapIcon from '../../../../assets/map.svg';
+import starIcon from '../../../../assets/star.svg';
 import css from './CamperOverview.module.css';
 
 interface CamperOverviewProps {

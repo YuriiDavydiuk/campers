@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
 
-  padding: 0 6.4rem;
+  padding: 0 1.6rem;
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/hero-img.jpg');
@@ -17,35 +17,32 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4rem;
+  gap: 3.2rem;
 
+  width: 100%;
   max-width: 57.1rem;
 }
 
 .text {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 
 .title {
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   font-weight: 600;
   line-height: 1;
 
   color: var(--color-text-light);
-
-  white-space: nowrap;
 }
 
 .description {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 133%;
 
   color: var(--color-text-light);
-
-  white-space: nowrap;
 }
 
 .button {
@@ -76,4 +73,40 @@
 .button:focus-visible {
   outline: 2px solid var(--color-text-inverse);
   outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-inline: 3.2rem;
+  }
+
+  .content {
+    gap: 4rem;
+  }
+
+  .text {
+    gap: 1.6rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .description {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1158px) {
+  .hero {
+    padding-inline: 6.4rem;
+  }
+
+  .title {
+    font-size: 4.8rem;
+  }
+
+  .description {
+    font-size: 2.4rem;
+  }
 }

@@ -1,10 +1,10 @@
 .form {
-  width: 36rem;
-  padding: 2.4rem;
+  width: 100%;
+  padding: 1.6rem;
 
   display: flex;
   flex-direction: column;
-  gap: 4.8rem;
+  gap: 3.2rem;
 
   border-radius: 2rem;
 
@@ -16,7 +16,7 @@
 .info {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3.2rem;
 }
 
 /* Location */
@@ -166,4 +166,52 @@
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding: 2.4rem;
+  }
+
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .title {
+    grid-column: 1 / -1;
+  }
+
+  .actions {
+    flex-direction: row;
+  }
+
+  .actions > * {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1158px) {
+  .form {
+    flex-shrink: 0;
+    gap: 4.8rem;
+
+    width: 36rem;
+  }
+
+  .info {
+    gap: 4rem;
+  }
+
+  .filters {
+    display: flex;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions > * {
+    flex: none;
+  }
 }

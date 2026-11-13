@@ -1,10 +1,10 @@
 .overview {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 1.6rem;
 
-  width: 65rem;
-  padding: 2.4rem;
+  width: 100%;
+  padding: 1.6rem;
   border-radius: 1.6rem;
 
   background-color: var(--color-bg-secondary);
@@ -19,7 +19,7 @@
 
 .title,
 .price {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 3.2rem;
 }
@@ -33,6 +33,7 @@
 
 .meta {
   display: flex;
+  flex-direction: column;
   gap: 1.6rem;
 }
 
@@ -42,10 +43,30 @@
   gap: 0.4rem;
 
   line-height: 2.4rem;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .description {
   color: var(--color-text-secondary);
   line-height: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .overview {
+    gap: 2.4rem;
+    padding: 2.4rem;
+  }
+
+  .title,
+  .price {
+    font-size: 2.4rem;
+  }
+
+  .meta {
+    flex-direction: row;
+  }
+
+  .metaItem {
+    white-space: nowrap;
+  }
 }

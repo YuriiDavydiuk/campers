@@ -4,9 +4,8 @@
   align-items: flex-start;
   gap: 1.6rem;
 
-  width: 65rem;
-  min-height: 36rem;
-  padding: 2.4rem;
+  width: 100%;
+  padding: 1.6rem;
   border-radius: 1.6rem;
 
   background-color: var(--color-bg-secondary);
@@ -22,7 +21,7 @@
 }
 
 .title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 3.2rem;
 }
@@ -55,10 +54,23 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 1.6rem;
 
   line-height: 2.4rem;
 }
 
 .infoRow dd {
   margin: 0;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .vehicleDetails {
+    min-height: 36rem;
+    padding: 2.4rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
 }

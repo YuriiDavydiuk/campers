@@ -5,9 +5,9 @@
   align-items: center;
   gap: 2.4rem;
 
-  width: 64.1rem;
+  width: 100%;
   min-height: 38.2rem;
-  padding: 4.4rem;
+  padding: 2.4rem 1.6rem;
   border: 1px solid var(--color-border);
   border-radius: 1.6rem;
 }
@@ -18,7 +18,7 @@
   align-items: flex-start;
   gap: 0.8rem;
 
-  width: 52.7rem;
+  width: 100%;
 }
 
 .title {
@@ -37,7 +37,7 @@
   flex-direction: column;
   gap: 2.4rem;
 
-  width: 52.7rem;
+  width: 100%;
 }
 
 .fields {
@@ -130,4 +130,10 @@
 
 .requestError {
   color: #ff6060;
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding: 4.4rem;
+  }
 }

@@ -1,15 +1,16 @@
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 2.7rem;
+  gap: 1.2rem;
 
-  width: 63.8rem;
-  height: 67.66rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .mainGallery {
   width: 100%;
-  height: 50.5rem;
+  height: auto;
+  aspect-ratio: 638 / 505;
   border-radius: 1.661rem;
   overflow: hidden;
 }
@@ -27,11 +28,12 @@
 
 .thumbnails {
   width: 100%;
-  height: 14.46rem;
+  height: auto;
 }
 
 .thumbnailSlide {
-  height: 14.46rem;
+  height: auto;
+  aspect-ratio: 135 / 145;
   border: 3px solid transparent;
   border-radius: 1.6rem;
   overflow: hidden;
@@ -46,4 +48,16 @@
 .thumbnailImage {
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    gap: 2.4rem;
+  }
+}
+
+@media (min-width: 1158px) {
+  .gallery {
+    gap: 2.7rem;
+  }
 }

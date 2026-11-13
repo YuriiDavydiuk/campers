@@ -1,13 +1,12 @@
+import { useQuery } from '@tanstack/react-query';
 import { Field, Form, Formik } from 'formik';
 import { useId } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import { getCamperFilters } from '../../../../services/campersService';
 
-import type { FilterFormValues } from '../../../../types/filters';
-import Button from '../../../../components/Button/Button';
-import locationIcon from '../../../../assets/location.svg';
 import closeIcon from '../../../../assets/close-outline.svg';
-
+import locationIcon from '../../../../assets/location.svg';
+import Button from '../../../../components/Button/Button';
+import { getCamperFilters } from '../../../../services/campersService';
+import type { FilterFormValues } from '../../../../types/filters';
 import css from './Filters.module.css';
 
 interface FiltersProps {

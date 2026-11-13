@@ -5,6 +5,7 @@
 
   display: grid;
   place-items: center;
+  padding: 1.6rem;
 
   background-color: rgb(16 24 40 / 15%);
 }
@@ -16,9 +17,10 @@
   justify-content: center;
   gap: 3.2rem;
 
-  width: 54.3rem;
-  height: 29.6rem;
-  padding: 4.8rem 9.6rem;
+  width: 100%;
+  max-width: 54.3rem;
+  min-height: 29.6rem;
+  padding: 3.2rem 1.6rem;
   border-radius: 1.6rem;
   overflow: hidden;
 
@@ -39,12 +41,12 @@
   flex-direction: column;
   gap: 1.6rem;
 
-  width: 35.1rem;
+  width: 100%;
   text-align: center;
 }
 
 .title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 3.2rem;
 }
@@ -58,5 +60,15 @@
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 4.8rem 9.6rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
   }
 }

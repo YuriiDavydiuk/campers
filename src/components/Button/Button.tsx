@@ -1,5 +1,5 @@
-import type { ComponentPropsWithoutRef } from 'react';
 import clsx from 'clsx';
+import type { ComponentPropsWithoutRef } from 'react';
 
 import css from './Button.module.css';
 
