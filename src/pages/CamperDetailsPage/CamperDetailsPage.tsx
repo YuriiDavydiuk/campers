@@ -2,16 +2,15 @@ import { useQuery } from '@tanstack/react-query';
 import clsx from 'clsx';
 import { Link, useParams } from 'react-router-dom';
 
+import buttonCss from '../../components/Button/Button.module.css';
+import Loading from '../../components/Loading/Loading';
+import { getCamperById, getCamperReviews } from '../../services/campersService';
+import css from './CamperDetailsPage.module.css';
+import BookingForm from './components/BookingForm/BookingForm';
 import CamperGallery from './components/CamperGallery/CamperGallery';
 import CamperOverview from './components/CamperOverview/CamperOverview';
-import VehicleDetails from './components/VehicleDetails/VehicleDetails';
 import Reviews from './components/Reviews/Reviews';
-import BookingForm from './components/BookingForm/BookingForm';
-import css from './CamperDetailsPage.module.css';
-
-import Loading from '../../components/Loading/Loading';
-import buttonCss from '../../components/Button/Button.module.css';
-import { getCamperById, getCamperReviews } from '../../services/campersService';
+import VehicleDetails from './components/VehicleDetails/VehicleDetails';
 
 export default function CamperDetailsPage() {
   const { id = '' } = useParams();

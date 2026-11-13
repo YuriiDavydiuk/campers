@@ -1,20 +1,8 @@
-import '@testing-library/jest-dom/jest-globals';
-
 import { describe, expect, jest, test } from '@jest/globals';
 import { render, screen, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
 import Header from './Header';
-
-jest.mock('react-router-dom', () => {
-  const { TextDecoder, TextEncoder } = jest.requireActual('node:util') as {
-    TextDecoder: typeof globalThis.TextDecoder;
-    TextEncoder: typeof globalThis.TextEncoder;
-  };
-  Object.assign(globalThis, { TextDecoder, TextEncoder });
-
-  return jest.requireActual('react-router-dom');
-});
 
 jest.mock('../../assets/logo.svg', () => 'logo.svg');
 

@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom/jest-globals';
-
 import { describe, expect, jest, test } from '@jest/globals';
 import { render, screen } from '@testing-library/react';
 

@@ -1,7 +1,7 @@
 module.exports = {
   clearMocks: true,
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['@testing-library/jest-dom'],
+  setupFilesAfterEnv: ['<rootDir>/src/test/setupTests.ts'],
   transform: {
     '^.+\\.[jt]sx?$': [
       'babel-jest',
@@ -15,6 +15,8 @@ module.exports = {
     ],
   },
   moduleNameMapper: {
+    '^swiper/css.*$': '<rootDir>/src/test/fileMock.cjs',
     '\\.css$': 'identity-obj-proxy',
+    '\\.(svg|png|jpe?g)$': '<rootDir>/src/test/fileMock.cjs',
   },
 };

@@ -1,15 +1,14 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
 import { useState } from 'react';
-import type { FilterFormValues } from '../../types/filters';
 
-import Filters from './components/Filters/Filters';
-import CamperCard from './components/CamperCard/CamperCard';
 import Button from '../../components/Button/Button';
 import Loading from '../../components/Loading/Loading';
-import NoCampersFound from './components/NoCampersFound/NoCampersFound';
-
 import { getCampers } from '../../services/campersService';
+import type { FilterFormValues } from '../../types/filters';
 import css from './CatalogPage.module.css';
+import CamperCard from './components/CamperCard/CamperCard';
+import Filters from './components/Filters/Filters';
+import NoCampersFound from './components/NoCampersFound/NoCampersFound';
 
 export default function CatalogPage() {
   const [filters, setFilters] = useState<FilterFormValues>({

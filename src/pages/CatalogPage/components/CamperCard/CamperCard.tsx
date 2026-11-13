@@ -1,15 +1,14 @@
-import { Link } from 'react-router-dom';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 
-import FeatureBadge from '../../../../components/FeatureBadge/FeatureBadge';
-import type { Camper } from '../../../../types/camper';
-
-import buttonCss from '../../../../components/Button/Button.module.css';
-import starIcon from '../../../../assets/star.svg';
+import formIcon from '../../../../assets/alcove.svg';
+import transmissionIcon from '../../../../assets/automatic.svg';
 import mapIcon from '../../../../assets/map.svg';
 import engineIcon from '../../../../assets/petrol.svg';
-import transmissionIcon from '../../../../assets/automatic.svg';
-import formIcon from '../../../../assets/alcove.svg';
+import starIcon from '../../../../assets/star.svg';
+import buttonCss from '../../../../components/Button/Button.module.css';
+import FeatureBadge from '../../../../components/FeatureBadge/FeatureBadge';
+import type { Camper } from '../../../../types/camper';
 import css from './CamperCard.module.css';
 
 interface CamperCardProps {

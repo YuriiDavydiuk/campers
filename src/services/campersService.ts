@@ -1,11 +1,11 @@
 import apiClient from '../api/apiClient';
 import type {
-  Camper,
-  CampersResponse,
-  CamperReview,
-  CamperDetails,
   BookingRequest,
   BookingResponse,
+  Camper,
+  CamperDetails,
+  CamperReview,
+  CampersResponse,
 } from '../types/camper';
 import type { CamperFiltersResponse } from '../types/filters';
 

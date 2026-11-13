@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 7.2rem;
-  padding: 2.4rem 6.4rem;
+  padding: 2.4rem 1.6rem;
 
   background-color: var(--color-bg-secondary);
   border-bottom: 1px solid var(--color-bg-muted);
@@ -11,22 +11,22 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navList {
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 1.6rem;
 }
+
 .logo img {
-  width: 13.6rem;
-  height: 1.6rem;
+  width: 10.8rem;
+  height: auto;
 }
 
 .nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: static;
 }
 
 .navLink {
@@ -39,4 +39,30 @@
 
 .active {
   color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-inline: 3.2rem;
+  }
+
+  .navList {
+    gap: 3.2rem;
+  }
+
+  .logo img {
+    width: 13.6rem;
+  }
+
+  .nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 1158px) {
+  .header {
+    padding-inline: 6.4rem;
+  }
 }

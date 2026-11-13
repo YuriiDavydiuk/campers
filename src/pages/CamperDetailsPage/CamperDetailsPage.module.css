@@ -1,30 +1,30 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 8.8rem;
+  gap: 4.8rem;
 
-  width: 131.2rem;
-  margin: 6.4rem auto;
+  width: 100%;
+  margin: 3.2rem auto;
+  padding-inline: 1.6rem;
 }
 
 .topSection {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 2.4rem;
 
   width: 100%;
-  min-height: 68rem;
 }
 
 .infoContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 1.6rem;
 
-  width: 65rem;
-  min-height: 68rem;
+  width: 100%;
 }
 
 .reviewsSection {
@@ -44,8 +44,9 @@
 
 .reviewsContent {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 4.8rem;
+  gap: 3.2rem;
 
   width: 100%;
 }
@@ -55,7 +56,7 @@
   place-items: center;
 
   min-height: calc(100vh - 7.2rem);
-  padding: 6.4rem;
+  padding: 3.2rem 1.6rem;
 }
 
 .errorContent {
@@ -68,7 +69,7 @@
 }
 
 .errorTitle {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 600;
   line-height: 4rem;
 }
@@ -82,4 +83,48 @@
 
 .errorLink {
   margin-top: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  .page {
+    gap: 6.4rem;
+
+    margin-block: 4.8rem;
+    padding-inline: 3.2rem;
+  }
+
+  .errorPage {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .errorTitle {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 1158px) {
+  .page {
+    gap: 8.8rem;
+
+    width: calc(100% - 6.4rem);
+    max-width: 131.2rem;
+    margin-block: 6.4rem;
+    padding-inline: 0;
+  }
+
+  .topSection {
+    display: grid;
+    grid-template-columns: minmax(0, 638fr) minmax(0, 650fr);
+  }
+
+  .infoContainer {
+    justify-content: center;
+    min-height: 68rem;
+  }
+
+  .reviewsContent {
+    display: grid;
+    grid-template-columns: minmax(0, 623fr) minmax(0, 641fr);
+    gap: 4.8rem;
+  }
 }

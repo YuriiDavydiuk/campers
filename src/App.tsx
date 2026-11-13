@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 
 import AppLayout from './components/AppLayout/AppLayout';
-import HomePage from './pages/HomePage/HomePage';
-import CatalogPage from './pages/CatalogPage/CatalogPage';
 import CamperDetailsPage from './pages/CamperDetailsPage/CamperDetailsPage';
+import CatalogPage from './pages/CatalogPage/CatalogPage';
+import HomePage from './pages/HomePage/HomePage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 export default function App() {
